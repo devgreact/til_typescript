@@ -1,5 +1,7 @@
-let neverVar1 = 100;
-let neverVar2 = true;
-let neverVar3 = undefined;
-let neverVar4 = null;
-export {};
+var age = 0;
+function showAge(){
+    var age = 100;    
+}
+console.log(age);
+showAge();
+console.log(age);
