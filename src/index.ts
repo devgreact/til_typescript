@@ -1,11 +1,14 @@
-const name  = "아이유";
-const age = 20;
-const job = "가수";
+type MemberType = {
+  userName: string;
+  age: number;
+  group: string;
+};
+const member: MemberType = { userName: "뷔", age: 30, group: "BTS" };
+// const { userName, age, group } = member;
 
-const 아이유 = {
-     name: "아이유",
-     age: 20,
-     job: "가수",
-}
+const { ...rest }: MemberType = member;
+console.log(rest);
 
-window.아이유.age;
+const { userName, ...who }: MemberType = member;
+console.log(userName);
+console.log(who);

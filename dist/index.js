@@ -1,7 +1,10 @@
-var age = 0;
-function showAge(){
-    var age = 100;    
-}
-console.log(age);
-showAge();
-console.log(age);
+const member = { userName: "뷔", age: 30, group: "BTS" };
+// const { userName, age, group } = member;
+
+// 사용하지 않은 나머지 속성 만 모으는 연산자
+const { ...rest } = member;
+console.log(rest);
+
+const { userName, ...who } = member;
+console.log(userName);
+console.log(who);
