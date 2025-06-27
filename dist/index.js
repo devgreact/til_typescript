@@ -1,10 +1,9 @@
-const member = { userName: "뷔", age: 30, group: "BTS" };
-// const { userName, age, group } = member;
+class MathTool {
+  static PI = 3.14;
+  static muliti(x, y) {
+    return x * y;
+  }
+}
 
-// 사용하지 않은 나머지 속성 만 모으는 연산자
-const { ...rest } = member;
-console.log(rest);
-
-const { userName, ...who } = member;
-console.log(userName);
-console.log(who);
+MathTool.PI;
+MathTool.muliti(5, 6);

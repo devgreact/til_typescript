@@ -1,14 +1,9 @@
-type MemberType = {
-  userName: string;
-  age: number;
-  group: string;
-};
-const member: MemberType = { userName: "뷔", age: 30, group: "BTS" };
-// const { userName, age, group } = member;
+class MathTool {
+  static PI: number = 3.14;
+  static muliti(x: number, y: number) {
+    return x * y;
+  }
+}
 
-const { ...rest }: MemberType = member;
-console.log(rest);
-
-const { userName, ...who }: MemberType = member;
-console.log(userName);
-console.log(who);
+MathTool.PI;
+MathTool.muliti(5, 6);
