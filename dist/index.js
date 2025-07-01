@@ -1,9 +1,10 @@
-class MathTool {
-  static PI = 3.14;
-  static muliti(x, y) {
-    return x * y;
-  }
-}
 
-MathTool.PI;
-MathTool.muliti(5, 6);
+
+const arr = [1, 2, 3, 4];
+
+
+
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]); // 1, 2, 3, 4
+}
